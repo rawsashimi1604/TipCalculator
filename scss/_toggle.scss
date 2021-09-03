@@ -1,0 +1,15 @@
+// ------Toggle Number of People Section when 0-------
+.toggle-zero {
+  color: orange;
+  font-weight: map-get($font-weights, "bold");
+}
+
+// remove border-on, replace with toggle-zero-bar when 0
+.toggle-zero-bar {
+  border: 2px solid orange;
+}
+
+// -----Toggle Custom Tip Bar when clicked-----
+.toggle-custom {
+  justify-content: flex-end;
+}

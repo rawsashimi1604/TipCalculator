@@ -5,6 +5,21 @@
   padding: 0;
 }
 
+.toggle-zero {
+  color: orange;
+  font-weight: 700;
+}
+
+.toggle-zero-bar {
+  border: 2px solid orange;
+}
+
+.toggle-custom {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 body {
   background-color: #c5e4e7;
   min-height: 100vh;
@@ -33,6 +48,9 @@ main {
   border-radius: 10px;
   max-width: 375px;
   min-width: 375px;
+  -webkit-box-shadow: 0px 5px 10px #f4fafa;
+          box-shadow: 0px 5px 10px #f4fafa;
+  overflow: hidden;
 }
 
 main section {
@@ -45,10 +63,28 @@ main h2 {
   margin-bottom: 5px;
 }
 
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .border-on {
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
 main .input-bar {
   background-color: #f4fafa;
   margin-top: 0.4em;
   padding: 0.4em 0.6em;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,10 +103,19 @@ main .input-bar img {
   height: 18px;
 }
 
+main .input-bar:hover {
+  border: 2px solid #26c0ab;
+}
+
 main .input-bar span {
+  font-weight: 700;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-weight: 700;
+  text-align: end;
 }
 
 main .select-tip .tips {
@@ -87,18 +132,39 @@ main .select-tip .tips {
 main .select-tip .tips div {
   min-width: 150px;
   max-width: 150px;
-  margin: 0.3em 0;
-  padding: 0.4em 1em;
+  margin: 0.2em 0;
+  padding: 0.4em 0.5em;
   border-radius: 8px;
   background-color: #00494d;
   color: white;
   text-align: center;
   font-weight: 700;
+  border: 2px solid white;
+}
+
+main .select-tip .tips div .select-custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .select-tip .tips div:hover {
+  cursor: pointer;
+  color: #00494d;
+  background-color: #c5e4e7;
 }
 
 main .select-tip .tips div:last-of-type {
   background-color: #f4fafa;
   color: #7f9c9f;
+  border: 2px solid white;
+}
+
+main .select-tip .tips div:last-of-type:hover {
+  border: 2px solid #26c0ab;
 }
 
 main .output {
@@ -163,5 +229,23 @@ main .output button {
   padding: 0.3em 2em;
   font-size: 0.8em;
   text-transform: capitalize;
+}
+
+main .output button:hover {
+  background-color: #c5e4e7;
+  cursor: pointer;
+}
+
+[contenteditable] {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: inherit;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+      user-select: auto;
+  -moz-user-select: -moz-text;
+  outline: 0px solid transparent;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

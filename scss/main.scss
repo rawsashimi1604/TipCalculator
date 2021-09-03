@@ -1,4 +1,5 @@
 @import "./config";
+@import "./toggle";
 
 body {
   background-color: $col-light-gray-cyan-dark;
@@ -18,10 +19,12 @@ body {
 main {
   margin: 1em;
   padding: 1.2em;
-  background-color: white;
+  background-color: $col-white;
   border-radius: 10px;
   max-width: 375px;
   min-width: 375px;
+  box-shadow: 0px 5px 10px $col-light-gray-cyan-light;
+  overflow: hidden;
 
   section {
     margin-bottom: 1em;
@@ -33,10 +36,21 @@ main {
     margin-bottom: 5px;
   }
 
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .border-on {
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+
   .input-bar {
     background-color: $col-light-gray-cyan-light;
     margin-top: 0.4em;
     padding: 0.4em 0.6em;
+    border-radius: 10px;
 
     display: flex;
     flex-wrap: nowrap;
@@ -47,9 +61,17 @@ main {
       width: 12px;
       height: 18px;
     }
+
+    &:hover {
+      border: 2px solid $col-primary-color;
+    }
+
     span {
-      align-self: flex-end;
       font-weight: map-get($font-weights, "bold");
+      max-width: 100%;
+      flex-grow: 1;
+      align-self: flex-end;
+      text-align: end;
     }
   }
 
@@ -62,18 +84,35 @@ main {
       div {
         min-width: 150px;
         max-width: 150px;
-        margin: 0.3em 0;
-        padding: 0.4em 1em;
+        margin: 0.2em 0;
+        padding: 0.4em 0.5em;
         border-radius: 8px;
         background-color: $col-dark-cyan;
         color: $col-white;
         text-align: center;
         font-weight: map-get($font-weights, "bold");
+        border: 2px solid $col-white;
+
+        .select-custom {
+          display: flex;
+          justify-content: center;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: $col-dark-cyan;
+          background-color: $col-light-gray-cyan-dark;
+        }
       }
 
       div:last-of-type {
         background-color: $col-light-gray-cyan-light;
         color: $col-dark-gray-cyan-light;
+        border: 2px solid $col-white;
+
+        &:hover {
+          border: 2px solid $col-primary-color;
+        }
       }
     }
   }
@@ -128,6 +167,23 @@ main {
       padding: 0.3em 2em;
       font-size: 0.8em;
       text-transform: capitalize;
+
+      &:hover {
+        background-color: $col-light-gray-cyan-dark;
+        cursor: pointer;
+      }
     }
   }
+}
+
+[contenteditable] {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: inherit;
+  -webkit-user-select: auto;
+  user-select: auto;
+  -moz-user-select: -moz-text;
+  outline: 0px solid transparent;
+  cursor: pointer;
 }

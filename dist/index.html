@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 16px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -32,9 +32,9 @@
     <!-- Enter Bill -->
     <section class="bill">
       <h2>Bill</h2>
-      <div class="input-bar" contenteditable="true">
-        <img src="./images/icon-dollar.svg" alt="dollar" contenteditable="false">
-        <span>0.00</span>
+      <div class="input-bar border-on">
+        <img src="./images/icon-dollar.svg" alt="dollar">
+        <span contenteditable="true">0.00</span>
       </div>
     </section>
 
@@ -48,17 +48,21 @@
         <div><span>25%</span></div>
         <div><span>50%</span></div>
         <div>
-          <span contenteditable="true">Custom</span>
+          <span contenteditable="true" class="select-custom toggle-custom">Custom</span>
         </div>
       </div>
     </section>
 
     <!-- Number of People -->
     <section class="people">
-      <h2>Number of People</h2>
-      <div class="input-bar" contenteditable="true">
-        <img src="./images/icon-person.svg" alt="person" contenteditable="false">
-        <span>0</span>
+      <div class="wrapper">
+        <h2>Number of People</h2>
+        <h2 class="toggle-zero">Can't be zero</h2>
+      </div>
+      
+      <div class="input-bar border-on toggle-zero-bar">
+        <img src="./images/icon-person.svg" alt="person">
+        <span contenteditable="true">0</span>
       </div>
     </section>
 
@@ -92,7 +96,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/rawsashimi1604" target="_blank">rawsashimi1604</a>.
   </div>
 </body>
 </html>
