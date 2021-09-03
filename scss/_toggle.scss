@@ -1,15 +1,20 @@
 // ------Toggle Number of People Section when 0-------
 .toggle-zero {
-  color: orange;
-  font-weight: map-get($font-weights, "bold");
+  display: none;
 }
 
-// remove border-on, replace with toggle-zero-bar when 0
 .toggle-zero-bar {
-  border: 2px solid orange;
+  border: 2px solid orange !important;
 }
 
 // -----Toggle Custom Tip Bar when clicked-----
 .toggle-custom {
-  justify-content: flex-end;
+  text-align: end;
+  color: $col-dark-cyan;
+}
+
+// ------Toggle Tip TEXT and color when clicked----
+.toggle-tips-click {
+  color: $col-dark-cyan !important;
+  background-color: $col-primary-color !important;
 }

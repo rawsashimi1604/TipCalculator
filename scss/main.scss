@@ -42,15 +42,12 @@ main {
     justify-content: space-between;
   }
 
-  .border-on {
-    border: 2px solid rgba(255, 255, 255, 0);
-  }
-
   .input-bar {
     background-color: $col-light-gray-cyan-light;
     margin-top: 0.4em;
     padding: 0.4em 0.6em;
     border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
 
     display: flex;
     flex-wrap: nowrap;
@@ -75,6 +72,11 @@ main {
     }
   }
 
+  .not-zero {
+    color: orange;
+    font-weight: map-get($font-weights, "bold");
+  }
+
   .select-tip {
     .tips {
       display: flex;
@@ -94,14 +96,15 @@ main {
         border: 2px solid $col-white;
 
         .select-custom {
-          display: flex;
-          justify-content: center;
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
         }
 
         &:hover {
           cursor: pointer;
           color: $col-dark-cyan;
-          background-color: $col-light-gray-cyan-dark;
+          background-color: $col-primary-color;
         }
       }
 

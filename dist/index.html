@@ -28,27 +28,28 @@
   </header>
 
   <!-- Main body -->
-  <main>
+  <main id="container">
     <!-- Enter Bill -->
     <section class="bill">
       <h2>Bill</h2>
-      <div class="input-bar border-on">
+      <div class="input-bar">
         <img src="./images/icon-dollar.svg" alt="dollar">
-        <span contenteditable="true">0.00</span>
+        <span id="bill-price">
+          <span contenteditable="true" onkeypress="return isNumber(event)">0</span>.<span contenteditable="true" onkeypress="return isNumber(event)">00</span>
       </div>
     </section>
 
     <!-- Select Tip -->
     <section class="select-tip">
       <h2>Select Tip %</h2>
-      <div class="tips">
+      <div class="tips" id="tips">
         <div><span>5%</span></div>
         <div><span>10%</span></div>
         <div><span>15%</span></div>
         <div><span>25%</span></div>
         <div><span>50%</span></div>
-        <div>
-          <span contenteditable="true" class="select-custom toggle-custom">Custom</span>
+        <div id="custom-tip">
+          <span contenteditable="true" class="select-custom" onkeypress="return isNumber(event)">Custom</span>
         </div>
       </div>
     </section>
@@ -57,12 +58,12 @@
     <section class="people">
       <div class="wrapper">
         <h2>Number of People</h2>
-        <h2 class="toggle-zero">Can't be zero</h2>
+        <h2 class="toggle-zero not-zero">Can't be zero</h2>
       </div>
       
-      <div class="input-bar border-on toggle-zero-bar">
+      <div class="input-bar">
         <img src="./images/icon-person.svg" alt="person">
-        <span contenteditable="true">0</span>
+        <span contenteditable="true" onkeypress="return isNumber(event)">0</span>
       </div>
     </section>
 
@@ -74,8 +75,8 @@
           <span>/ person</span>
         </div>
         
-        <div class="tip-amt-output">
-          $4.27
+        <div class="tip-amt-output" id="total-tip">
+          $0.00
         </div>
       </div>
 
@@ -85,12 +86,12 @@
           <span>/ person</span>
         </div>
 
-        <div class="tip-amt-output">
-          $32.79
+        <div class="tip-amt-output" id="total-amt">
+          $0.00
         </div>
       </div>
 
-      <button class="reset">RESET</button>
+      <button class="reset" id="reset">RESET</button>
     </section>
   </main>
   
