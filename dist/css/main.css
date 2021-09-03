@@ -257,4 +257,51 @@ main .output button:hover {
   outline: 0px solid transparent;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1440px) {
+  main {
+    max-width: 1100px;
+    min-width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5em;
+  }
+  main .left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 45%;
+            flex: 1 0 45%;
+    padding: 1em;
+  }
+  main .right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 45%;
+            flex: 1 0 45%;
+    padding: 1em;
+  }
+  main .output {
+    padding: 1.5em;
+  }
+  main .output div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  main .output .total-amt {
+    margin-bottom: 95px;
+  }
+  main .output .tip-amt-output {
+    font-size: 1.6em;
+  }
+  main .output .output-text {
+    margin-top: 0.8em;
+  }
+}
 /*# sourceMappingURL=main.css.map */

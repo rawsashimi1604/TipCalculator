@@ -29,70 +29,75 @@
 
   <!-- Main body -->
   <main id="container">
-    <!-- Enter Bill -->
-    <section class="bill">
-      <h2>Bill</h2>
-      <div class="input-bar">
-        <img src="./images/icon-dollar.svg" alt="dollar">
-        <span id="bill-price">
-          <span contenteditable="true" onkeypress="return isNumber(event)">0.00</span>
-      </div>
-    </section>
-
-    <!-- Select Tip -->
-    <section class="select-tip">
-      <h2>Select Tip %</h2>
-      <div class="tips" id="tips">
-        <div><span>5%</span></div>
-        <div><span>10%</span></div>
-        <div><span>15%</span></div>
-        <div><span>25%</span></div>
-        <div><span>50%</span></div>
-        <div id="custom-tip">
-          <span contenteditable="true" class="select-custom" onkeypress="return isNumber(event)">Custom</span>
+    <div class="left">
+      <!-- Enter Bill -->
+      <section class="bill">
+        <h2>Bill</h2>
+        <div class="input-bar">
+          <img src="./images/icon-dollar.svg" alt="dollar">
+          <span id="bill-price">
+            <span contenteditable="true" onkeypress="return isNumber(event)">0.00</span>
         </div>
-      </div>
-    </section>
-
-    <!-- Number of People -->
-    <section class="people">
-      <div class="wrapper">
-        <h2>Number of People</h2>
-        <h2 class="toggle-zero not-zero">Can't be zero</h2>
-      </div>
+      </section>
       
-      <div class="input-bar">
-        <img src="./images/icon-person.svg" alt="person">
-        <span contenteditable="true" onkeypress="return isNumber(event)">0</span>
-      </div>
-    </section>
-
-    <!-- Output -->
-    <section class="output">
-      <div class="tip-amt">
-        <div class="output-text">
-          <span>Tip Amount</span>
-          <span>/ person</span>
+      <!-- Select Tip -->
+      <section class="select-tip">
+        <h2>Select Tip %</h2>
+        <div class="tips" id="tips">
+          <div><span>5%</span></div>
+          <div><span>10%</span></div>
+          <div><span>15%</span></div>
+          <div><span>25%</span></div>
+          <div><span>50%</span></div>
+          <div id="custom-tip">
+            <span contenteditable="true" class="select-custom" onkeypress="return isNumber(event)">Custom</span>
+          </div>
         </div>
-        
-        <div class="tip-amt-output" id="total-tip">
-          $0.00
+      </section>
+      
+      <!-- Number of People -->
+      <section class="people">
+        <div class="wrapper">
+          <h2>Number of People</h2>
+          <h2 class="toggle-zero not-zero">Can't be zero</h2>
         </div>
-      </div>
-
-      <div class="total-amt">
-        <div class="output-text">
-          <span>Total</span>
-          <span>/ person</span>
+      
+        <div class="input-bar">
+          <img src="./images/icon-person.svg" alt="person">
+          <span contenteditable="true" onkeypress="return isNumber(event)">0</span>
         </div>
+      </section>
+    </div>
+   
 
-        <div class="tip-amt-output" id="total-amt">
-          $0.00
+    <div class="right">
+      <!-- Output -->
+      <section class="output">
+        <div class="tip-amt">
+          <div class="output-text">
+            <span>Tip Amount</span>
+            <span>/ person</span>
+          </div>
+      
+          <div class="tip-amt-output" id="total-tip">
+            $0.00
+          </div>
         </div>
-      </div>
-
-      <button class="reset" id="reset">RESET</button>
-    </section>
+      
+        <div class="total-amt">
+          <div class="output-text">
+            <span>Total</span>
+            <span>/ person</span>
+          </div>
+      
+          <div class="tip-amt-output" id="total-amt">
+            $0.00
+          </div>
+        </div>
+      
+        <button class="reset" id="reset">RESET</button>
+      </section>
+    </div>
   </main>
   
   <script src="./js/app.js"></script>

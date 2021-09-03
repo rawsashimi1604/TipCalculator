@@ -199,3 +199,43 @@ main {
   outline: 0px solid transparent;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1440px) {
+  main {
+    max-width: 1100px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+
+    .left {
+      flex: 1 0 45%;
+      padding: 1em;
+    }
+    .right {
+      flex: 1 0 45%;
+      padding: 1em;
+    }
+
+    .output {
+      padding: 1.5em;
+      div {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .total-amt {
+        margin-bottom: 95px;
+      }
+
+      .tip-amt-output {
+        font-size: 1.6em;
+      }
+
+      .output-text {
+        margin-top: 0.8em;
+      }
+    }
+  }
+}
