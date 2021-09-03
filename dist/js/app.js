@@ -101,8 +101,12 @@ mainContainer.addEventListener("mouseover", () => {
 
     let amt = (billPrice / peopleNumber) + tips;
     amt = Math.round(amt * 100) / 100;
-
-
-    totalTip.innerText = `$${tips.toFixed(2)}`;
-    totalAmt.innerText = `$${amt.toFixed(2)}`;
+    console.log(amt);
+    if ((isNaN(amt) && isNaN(tips)) || (amt === Infinity && tips === Infinity)) {
+        totalTip.innerText = "$0.00";
+        totalAmt.innerText = "$0.00";
+    } else {
+        totalTip.innerText = `$${tips.toFixed(2)}`;
+        totalAmt.innerText = `$${amt.toFixed(2)}`;
+    }
 });
