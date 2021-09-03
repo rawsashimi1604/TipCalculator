@@ -34,9 +34,12 @@ let customFlag = false;
         });
 
         if (!tip.id) {
+            const customText = customTip.firstElementChild;
             // If default tip
             tip.classList.add("toggle-tips-click");
             tipVal = parseFloat(tip.innerText.slice(0, -1));
+            customFlag = false;
+            customText.innerText = "Custom";
         } else {
             // If custom tip
             const customText = customTip.firstElementChild;
