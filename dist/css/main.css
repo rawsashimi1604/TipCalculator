@@ -44,6 +44,11 @@ body {
   padding: 2em 1em;
 }
 
+header img {
+  width: 125%;
+  margin: 1em 0;
+}
+
 main {
   margin: 1em;
   padding: 1.2em;
