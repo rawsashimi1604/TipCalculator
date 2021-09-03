@@ -7,10 +7,161 @@
 
 body {
   background-color: #c5e4e7;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Space Mono", sans-serif;
   line-height: 1;
   color: #00494d;
   font-weight: 400;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 1em;
+}
+
+main {
+  margin: 1em;
+  padding: 1.2em;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 375px;
+  min-width: 375px;
+}
+
+main section {
+  margin-bottom: 1em;
+}
+
+main h2 {
+  font-size: 0.6em;
+  color: #5e7a7d;
+  margin-bottom: 5px;
+}
+
+main .input-bar {
+  background-color: #f4fafa;
+  margin-top: 0.4em;
+  padding: 0.4em 0.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .input-bar img {
+  width: 12px;
+  height: 18px;
+}
+
+main .input-bar span {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: 700;
+}
+
+main .select-tip .tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .select-tip .tips div {
+  min-width: 150px;
+  max-width: 150px;
+  margin: 0.3em 0;
+  padding: 0.4em 1em;
+  border-radius: 8px;
+  background-color: #00494d;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+main .select-tip .tips div:last-of-type {
+  background-color: #f4fafa;
+  color: #7f9c9f;
+}
+
+main .output {
+  background-color: #00494d;
+  color: white;
+  padding: 1em;
+  padding-top: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+main .output > div {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .output .output-text {
+  font-size: 0.5em;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 0.7px;
+}
+
+main .output .output-text span:nth-child(1) {
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+
+main .output .output-text span:nth-child(2) {
+  color: #7f9c9f;
+}
+
+main .output .tip-amt-output {
+  font-size: 1.3em;
+  color: #26c0ab;
+  font-weight: 700;
+}
+
+main .output button {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  background-color: #26c0ab;
+  color: #00494d;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 0.3em 2em;
+  font-size: 0.8em;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=main.css.map */

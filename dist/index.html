@@ -32,12 +32,13 @@
     <!-- Enter Bill -->
     <section class="bill">
       <h2>Bill</h2>
-      <div>
-        <img src="./images/icon-dollar.svg" alt="dollar">
+      <div class="input-bar" contenteditable="true">
+        <img src="./images/icon-dollar.svg" alt="dollar" contenteditable="false">
         <span>0.00</span>
       </div>
     </section>
 
+    <!-- Select Tip -->
     <section class="select-tip">
       <h2>Select Tip %</h2>
       <div class="tips">
@@ -46,18 +47,22 @@
         <div><span>15%</span></div>
         <div><span>25%</span></div>
         <div><span>50%</span></div>
-        <div><span>Custom</span></div>
+        <div>
+          <span contenteditable="true">Custom</span>
+        </div>
       </div>
     </section>
 
+    <!-- Number of People -->
     <section class="people">
       <h2>Number of People</h2>
-      <div>
-        <img src="./images/icon-person.svg" alt="person">\
+      <div class="input-bar" contenteditable="true">
+        <img src="./images/icon-person.svg" alt="person" contenteditable="false">
         <span>0</span>
       </div>
     </section>
 
+    <!-- Output -->
     <section class="output">
       <div class="tip-amt">
         <div class="output-text">
@@ -66,7 +71,7 @@
         </div>
         
         <div class="tip-amt-output">
-          $0.00
+          $4.27
         </div>
       </div>
 
@@ -77,11 +82,11 @@
         </div>
 
         <div class="tip-amt-output">
-          $0.00
+          $32.79
         </div>
       </div>
 
-      <button class="reset">Reset</button>
+      <button class="reset">RESET</button>
     </section>
   </main>
   

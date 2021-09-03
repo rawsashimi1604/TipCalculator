@@ -1,10 +1,133 @@
-@import "config";
+@import "./config";
 
 body {
   background-color: $col-light-gray-cyan-dark;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Space Mono", sans-serif;
   line-height: 1;
   color: $col-dark-cyan;
   font-weight: map-get($font-weights, "regular");
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+}
+
+main {
+  margin: 1em;
+  padding: 1.2em;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 375px;
+  min-width: 375px;
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 0.6em;
+    color: $col-dark-gray-cyan-dark;
+    margin-bottom: 5px;
+  }
+
+  .input-bar {
+    background-color: $col-light-gray-cyan-light;
+    margin-top: 0.4em;
+    padding: 0.4em 0.6em;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 12px;
+      height: 18px;
+    }
+    span {
+      align-self: flex-end;
+      font-weight: map-get($font-weights, "bold");
+    }
+  }
+
+  .select-tip {
+    .tips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      div {
+        min-width: 150px;
+        max-width: 150px;
+        margin: 0.3em 0;
+        padding: 0.4em 1em;
+        border-radius: 8px;
+        background-color: $col-dark-cyan;
+        color: $col-white;
+        text-align: center;
+        font-weight: map-get($font-weights, "bold");
+      }
+
+      div:last-of-type {
+        background-color: $col-light-gray-cyan-light;
+        color: $col-dark-gray-cyan-light;
+      }
+    }
+  }
+
+  .output {
+    background-color: $col-dark-cyan;
+    color: $col-white;
+    padding: 1em;
+    padding-top: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 0;
+
+    > div {
+      margin-bottom: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .output-text {
+      font-size: 0.5em;
+      font-weight: map-get($font-weights, "bold");
+
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 0.7px;
+
+      span:nth-child(1) {
+        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+      }
+
+      span:nth-child(2) {
+        color: $col-dark-gray-cyan-light;
+      }
+    }
+
+    .tip-amt-output {
+      font-size: 1.3em;
+      color: $col-primary-color;
+      font-weight: map-get($font-weights, "bold");
+    }
+
+    button {
+      font-family: "Space Mono", sans-serif;
+      font-weight: map-get($font-weights, "bold");
+      background-color: $col-primary-color;
+      color: $col-dark-cyan;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      padding: 0.3em 2em;
+      font-size: 0.8em;
+      text-transform: capitalize;
+    }
+  }
 }
