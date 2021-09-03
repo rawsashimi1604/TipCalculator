@@ -70,7 +70,7 @@ peopleBar.addEventListener('mouseover', () => {
 
 // This resets values when reset button is pressed
 resetButton.addEventListener("click", () => {
-    billBar.innerText = "0.00";
+    billBar.innerHTML = '<span contenteditable="true" onkeypress="return isNumber(event)">0</span>.<span contenteditable="true" onkeypress="return isNumber(event)">00</span>';
 
     customFlag = false;
     customTip.firstElementChild.innerText = "Custom";
