@@ -1,0 +1,19 @@
+$col-primary-color: hsl(172, 67%, 45%);
+$col-dark-cyan: hsl(183, 100%, 15%);
+$col-dark-gray-cyan-dark: hsl(186, 14%, 43%);
+$col-dark-gray-cyan-light: hsl(184, 14%, 56%);
+$col-light-gray-cyan-dark: hsl(185, 41%, 84%);
+$col-light-gray-cyan-light: hsl(189, 41%, 97%);
+$col-light-gray-cyan-light: hsl(189, 41%, 97%);
+$col-white: hsl(0, 0%, 100%);
+
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

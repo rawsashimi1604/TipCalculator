@@ -1,0 +1,10 @@
+@import "config";
+
+body {
+  background-color: $col-light-gray-cyan-dark;
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+  line-height: 1;
+  color: $col-dark-cyan;
+  font-weight: map-get($font-weights, "regular");
+}

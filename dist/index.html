@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Main Heading -->
+  <header>
+    <img src="./images/logo.svg" alt="Splitter Logo">
+  </header>
+
+  <!-- Main body -->
+  <main>
+    <!-- Enter Bill -->
+    <section class="bill">
+      <h2>Bill</h2>
+      <div>
+        <img src="./images/icon-dollar.svg" alt="dollar">
+        <span>0.00</span>
+      </div>
+    </section>
+
+    <section class="select-tip">
+      <h2>Select Tip %</h2>
+      <div class="tips">
+        <div><span>5%</span></div>
+        <div><span>10%</span></div>
+        <div><span>15%</span></div>
+        <div><span>25%</span></div>
+        <div><span>50%</span></div>
+        <div><span>Custom</span></div>
+      </div>
+    </section>
+
+    <section class="people">
+      <h2>Number of People</h2>
+      <div>
+        <img src="./images/icon-person.svg" alt="person">\
+        <span>0</span>
+      </div>
+    </section>
+
+    <section class="output">
+      <div class="tip-amt">
+        <div class="output-text">
+          <span>Tip Amount</span>
+          <span>/ person</span>
+        </div>
+        
+        <div class="tip-amt-output">
+          $0.00
+        </div>
+      </div>
+
+      <div class="total-amt">
+        <div class="output-text">
+          <span>Total</span>
+          <span>/ person</span>
+        </div>
+
+        <div class="tip-amt-output">
+          $0.00
+        </div>
+      </div>
+
+      <button class="reset">Reset</button>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
